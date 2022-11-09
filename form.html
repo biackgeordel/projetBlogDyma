@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/51c92dadf8.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Projet Blog</title>
+  <script defer src="form.bundle.js"></script><script defer src="topbars.bundle.js"></script></head>
+  <body>
+    <div class="container">
+      <header>
+        <a href="./index.html" class="header-brand">Blog</a>
+        <ul>
+          <li>
+            <a href="./index.html" class="header-nav">Accueil</a>
+          </li>
+          <li>
+            <a href="./form.html" class="header-nav active">Créer un article</a>
+          </li>
+        </ul>
+      </header>
+      <main class="content">
+        <form>
+          <h2 class="title-underline">Ajouter un article</h2>
+          <div class="group-form">
+            <label for="author">Auteur</label>
+            <input type="text" name="author" id="author" />
+          </div>
+          <div class="group-form">
+            <label for="profil">Image</label>
+            <input type="text" name="image" id="profil" />
+          </div>
+          <div class="group-form">
+            <label for="title">Titre</label>
+            <input type="text" name="title" id="title" />
+          </div>
+
+          <div class="group-form">
+            <label for="category">Categorie</label>
+            <input type="text" name="category" id="category" />
+          </div>
+
+          <div class="group-form">
+            <label for="article"
+              >Article: <span class="nbre-caractere"></span
+            ></label>
+            <textarea name="content" id="article"></textarea>
+          </div>
+
+          <div class="form-btn-container">
+            <button class="btn btn-secondary" type="submit">Enregistrer</button>
+            <button class="btn btn-primary" type="submit">Annuler</button>
+          </div>
+          <ul class="error-text"></ul>
+        </form>
+      </main>
+      <footer>Blog 2022 &copy;</footer>
+    </div>
+  </body>
+</html>
